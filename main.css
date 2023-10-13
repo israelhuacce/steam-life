@@ -1,20 +1,24 @@
 html {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
     background-color: #f6f5f1;
 }   
 
+.name {
+    text-align: center
+}
+
 .areas {
-    background-color: ;
-    display: 
-    justify-content: ;
+    background-color:
 
 }
 
 .proyecto {
     background-color: #fcfbf7;
+    border-radius: 3%;
     margin: 10px;
     padding: 10px;
+    padding-bottom: 5px;
     display: flex;
     justify-content: left;
 }
@@ -24,6 +28,56 @@ html {
 }
 
 .descripcion {
-    margin-left: 3%;
+    margin-left: 5%;
     padding-top: 4%;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+.link-youtube {
+    color: red;
+}
+.lista {
+    background-color: white;
+    padding: 3%;
+}
+/*
+Aquí inicia para MUSIC
+*/
+.portada {
+    display: flex;
+}
+.picture-all {
+    display: flex;
+}
+
+.cover {
+	width: auto;
+    height: 60%;
+}
+
+.information {
+    margin-left: 5%;
+}
+
+
+
+@media (max-width: 1100px){
+    html {
+        margin: 0;
+        padding: ;
+    }
+    .proyecto {
+        margin: 10px;
+        padding: 10px;
+        display: block;
+    }
+    .lista {
+        padding-left: 6%;
+    }
+    .descripcion {
+        margin-left: 3%; 
+    }
 }
