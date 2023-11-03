@@ -1,15 +1,26 @@
 html {
     margin-left: 20%;
     margin-right: 20%;
-    background-color: #f6f5f1;
-}   
+    font-family: MotivaSansThin;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fcfbf7;
+}
+
+@font-face {
+    font-family: "MotivaSansThin";
+    src: url(fonts/MotivaSansThin.woff) format("woff");
+    font-display: swap;
+};
 
 .name {
-    text-align: center
+    text-align: center;
+    margin-left: ;
 }
 
 .areas {
-    background-color:
+    background-color:;
+    text-align: left;
 
 }
 
@@ -21,6 +32,7 @@ html {
     padding-bottom: 5px;
     display: flex;
     justify-content: left;
+    text-align: left;
 }
 
 .portada {
@@ -68,6 +80,9 @@ Aquí inicia para MUSIC
     html {
         margin: 0;
         padding: ;
+    }
+    .name {
+        text-align: center;
     }
     .proyecto {
         margin: 10px;
