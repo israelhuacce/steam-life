@@ -1,0 +1,119 @@
+html {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: MotivaSansThin;
+    font-size: 14px;
+    background-color: #fcfbf7;
+}
+
+@font-face {
+    font-family: "MotivaSansThin";
+    src: url(../fonts/MotivaSansThin.woff) format("woff");
+    font-display: swap;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.manga {
+    padding: 5px;
+}
+
+.manga-imagen {
+    width: 200px;
+    height: 300px;
+}
+
+.link-my {
+    text-decoration: none;
+    color: #96be25;
+}
+/* Inicio de decoración */
+
+.manga-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.manga-link :hover {
+    color: #96be25;
+}
+
+.manga:hover {
+    .manga-imagen {
+        width: 250px;
+        height: 350px;
+    }
+
+}
+
+.referencia {
+    text-decoration: none;
+    color: black;
+}
+footer {
+    text-align: center;
+}
+
+
+
+/* Inicio de Responsive Desing */
+
+@media (max-width: 1070px){
+    html {
+        margin: 1%;
+        padding: ;
+        font-size: 14px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .manga-imagen {
+        width: 150px;
+        height: 250px;
+    }
+    .contenedor {
+        display: list-item;
+        text-align: center;
+    }
+    h2 { 
+        text-align: center;
+        font-size: 30px;
+    }
+    .manga {
+        display: flex;
+        padding: 2%;
+    }
+    .manga>p {
+        padding: 2%;
+    }
+    .info {
+        padding: 3%;
+    }
+
+    .manga-link {
+        font-size: 20px;
+    }
+    .manga:hover {
+        .manga-imagen {
+            width: 150px;
+            height: 250px;
+        }
+    
+    }
+    .link-my {
+        text-decoration: none;
+        color: green;
+    }
+
+}
+    
+
+
+
+
