@@ -1,0 +1,79 @@
+html {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: MotivaSansThin;
+    font-size: 14px;
+    background-color: #fcfbf7;
+}
+
+@font-face {
+    font-family: "MotivaSansThin";
+    src: url(../fonts/MotivaSansThin.woff) format("woff");
+    font-display: swap;
+}
+h3 {
+    font-size: 15px;
+}
+/* Juegos */
+.caja-juegos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.juego {
+    padding: 5px;
+}
+
+.img-juego {
+    width: 200px;
+    height: 300px;
+}
+
+
+.juego:hover {
+    .img-juego {
+        width: 250px;
+        height: 350px;
+    }
+
+}
+
+/* Inicio de Responsive Desing */
+
+@media (max-width: 1070px){
+    html {
+        margin: 1%;
+        padding: ;
+        font-size: 14px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .caja-juegos {
+    display: list-item;
+    }
+    .img-juego {
+        width: 100px;
+        height: 150px;
+    }
+    .juego {
+        display: flex;
+        justify-content: left;
+    }
+    .info {
+        padding: 3%;
+    }
+}    
+
+
+.link-my {
+    text-decoration: none;
+    color: green;
+}
+footer {
+    text-align: center;
+}
+
+.referencia {
+    text-decoration: none;
+    color: black;
+}

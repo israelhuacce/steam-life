@@ -13,6 +13,7 @@ html {
     font-display: swap;
 }
 
+
 h1 {
     text-align: left;
     margin-left: 2%;
@@ -25,9 +26,6 @@ h1 {
 h2 {
     padding: 1%;
 }
-
-
-
 
 .areas {
     background-color:;
@@ -47,7 +45,8 @@ h2 {
 }
 
 .portada {
-    height: 150px;
+    height: 300px;
+    width: 500px;
 }
 
 .descripcion {
@@ -69,9 +68,7 @@ h2 {
 /*
 Aquí inicia para MUSIC
 */
-.portada {
-    display: flex;
-}
+
 .picture-all {
     display: flex;
 }
@@ -85,12 +82,30 @@ Aquí inicia para MUSIC
     margin-left: 5%;
 }
 
+.link-main {
+    text-decoration: none;
+    color: black;
+}
 
+.link-main :hover {
+    color: #96be25;
+}
+
+footer {
+    text-align: center;
+}
 
 @media (max-width: 1100px){
     html {
-        margin: 0;
-        padding: ;
+        margin-left: 1%;
+        margin-right: 
+    }
+    h2 {
+        font-size: 16px;
+    }
+    .portada {
+        height: 200px;
+        width: 300px;
     }
     .name {
         text-align: center;
@@ -106,18 +121,4 @@ Aquí inicia para MUSIC
     .descripcion {
         margin-left: 3%; 
     }
-}
-
-
-.link-main {
-    text-decoration: none;
-    color: black;
-}
-
-.link-main :hover {
-    color: #96be25;
-}
-
-footer {
-    text-align: center;
 }

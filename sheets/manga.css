@@ -16,6 +16,7 @@ html {
 .contenedor {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: auto;
 }
 
@@ -74,8 +75,8 @@ footer {
         text-align: center;
     }
     .manga-imagen {
-        width: 150px;
-        height: 250px;
+        width: 100px;
+        height: 150px;
     }
     .contenedor {
         display: list-item;

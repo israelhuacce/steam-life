@@ -1,0 +1,55 @@
+html {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: MotivaSansThin;
+    font-size: 14px;
+    background-color: #fcfbf7;
+}
+
+@font-face {
+    font-family: "MotivaSansThin";
+    src: url(../fonts/MotivaSansThin.woff) format("woff");
+    font-display: swap;
+}
+
+.caja-articulos {
+    display: flex;
+    flex-wrap: wrap;
+}
+.articulo-imagen {
+    width: 350px;
+    height: 200px;
+}
+
+.referencia {
+    text-decoration: none;
+    color: black;
+}
+
+.referencia:hover {
+    color: green;
+}
+
+.articulo:hover {
+    .articulo-imagen {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+/* Inicio de Responsive Desing */
+
+@media (max-width: 1070px){
+    html {
+        margin: 1%;
+        padding: ;
+        font-size: 14px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .articulo-imagen {
+        width: 300px;
+        height: 150px;
+    }
+}
