@@ -1,9 +1,9 @@
-let timeFocus = 33.09
-let timeGuitar = 14.65
+let timeFocus = 33.39
+let timeGuitar = 20.3
 let timeProgramming = 23.1
-let readBooks = 50
+let readBooks = 55
 let readManga = 4
-let numeroTocadas = 3
+let numeroTocadas = 5
 
 document.getElementById("time-focus").textContent = timeFocus;
 document.getElementById("time-guitar").textContent = timeGuitar;
