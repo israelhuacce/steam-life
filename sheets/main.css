@@ -5,6 +5,7 @@ html {
     font-size: 14px;
     text-align: left;
     background-color: #fcfbf7;
+    margin-top: none;
 }
 
 @font-face {
@@ -13,11 +14,17 @@ html {
     font-display: swap;
 }
 
+header {
+    display: flex;
+}
+
 
 h1 {
     text-align: left;
     margin-left: 2%;
+    font-size: 40px;
 }
+
 
 .menu {
     display: flex;
@@ -45,8 +52,8 @@ h2 {
 }
 
 .portada {
-    height: 300px;
-    width: 500px;
+    height: 150px;
+    width: 300px;
 }
 
 .descripcion {

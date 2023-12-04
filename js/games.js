@@ -1,12 +1,13 @@
-let dota2time = 5660.4
-let eurotruck = 204.8
-let csgo2 = 171
+let dota2time = 5668.4
+let eurotruck = 209.8
+let csgo2 = 175.5
 let lol = 60.3
 let genshin = 50
 let lf4d2 = 44.5
+let gtav = 39.4
 let americantruck = 37.1
-let gtav = 34.6
 let halflife = 11.2
+let realmroyale = 2.1
 
 
 document.getElementById("time-dota2").textContent = dota2time;
@@ -18,3 +19,4 @@ document.getElementById("time-lf4d2").textContent = lf4d2;
 document.getElementById("time-americantruck").textContent = americantruck;
 document.getElementById("time-gtav").textContent = gtav;
 document.getElementById("time-halflife").textContent = halflife;
+document.getElementById("time-realm").textContent = realmroyale;

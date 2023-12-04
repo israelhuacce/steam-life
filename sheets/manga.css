@@ -20,6 +20,11 @@ html {
     width: auto;
 }
 
+h1 {
+    text-align: left;
+    font-size: 50px;
+}
+
 .manga {
     padding: 5px;
 }
