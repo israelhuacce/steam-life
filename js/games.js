@@ -1,13 +1,13 @@
-let dota2time = 5668.4
-let eurotruck = 209.8
-let csgo2 = 175.5
+let dota2time = 5674.4
+let eurotruck = 210.4
+let csgo2 = 177.1
 let lol = 60.3
 let genshin = 50
 let lf4d2 = 44.5
 let gtav = 39.4
 let americantruck = 37.1
 let halflife = 11.2
-let realmroyale = 2.1
+let realmroyale = 4.1
 
 
 document.getElementById("time-dota2").textContent = dota2time;
