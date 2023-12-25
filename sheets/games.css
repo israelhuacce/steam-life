@@ -43,6 +43,10 @@ h3 {
 
 }
 
+.img_resume {
+    width: 500px;
+}
+
 /* Inicio de Responsive Desing */
 
 @media (max-width: 1070px){
@@ -68,6 +72,10 @@ h3 {
     .info {
         padding: 3%;
     }
+    .img_resume {
+        width: 200px;
+    }
+    
 }    
 
 
