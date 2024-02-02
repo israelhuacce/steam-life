@@ -12,6 +12,11 @@ html {
     font-display: swap;
 }
 
+.link {
+    text-decoration: none;
+    color: black;
+}
+
 /* Inicio de Responsive Desing */
 
 @media (max-width: 1070px){

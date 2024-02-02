@@ -1,5 +1,5 @@
-let timeFocus = 54.7
-let timeGuitar = 25
+let timeFocus = 61.8
+let timeGuitar = 26
 let timeProgramming = 24
 let readBooks = 57
 let readManga = 4
