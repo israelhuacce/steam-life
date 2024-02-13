@@ -1,12 +1,12 @@
-let dota2time = 5718.6
-let eurotruck = 214.8
-let csgo2 = 200
-let lol = 61
+let dota2time = 5730.8
+let eurotruck = 216.3
+let csgo2 = 201.5
+let lol = 61.5
 let genshin = 50
 let lf4d2 = 47
-let gtav = 43
+let gtav = 46
 let americantruck = 37.1
-let halflife = 12.4
+let halflife = 12.8
 let realmroyale = 4.6
 
 

@@ -3,7 +3,8 @@ html {
     margin-right: 20%;
     font-family: MotivaSansThin;
     font-size: 14px;
-    background-color: #fcfbf7;
+    background-color: black;
+    color: white;
 }
 
 @font-face {
@@ -23,7 +24,7 @@ html {
 
 .referencia {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .referencia:hover {
