@@ -1,0 +1,37 @@
+[
+    {
+        "nombre": "Steins;Gate",
+        "imagen": "https://cdn.myanimelist.net/images/anime/1935/127974.jpg",
+        "estado": "Finalizado",
+        "calificacion": "10/10",
+        "fecha_finalizacion": "2021-09-12"
+    },
+    {
+        "nombre": "Dandandan",
+        "imagen": "https://cdn.myanimelist.net/images/anime/1990/139975l.jpg",
+        "estado": "Finalizado",
+        "calificacion": "9/10",
+        "fecha_finalizacion": "2025-01-16"
+    },
+    {
+        "nombre": "Darling in the FranXX",
+        "imagen": "https://cdn.myanimelist.net/images/anime/1614/90408.jpg",
+        "estado": "Finalizado",
+        "calificacion": "10/10",
+        "fecha_finalizacion": "2021-09-12"
+    },
+    {
+        "nombre": "Black Clover",
+        "imagen": "https://cdn.myanimelist.net/images/anime/2/88336.jpg",
+        "estado": "Finalizado",
+        "calificacion": "9/10",
+        "fecha_finalizacion": "2021-09-12"
+    },
+    {
+        "nombre": "One Piece",
+        "imagen": "https://cdn.myanimelist.net/images/anime/1011/120243l.jpg",
+        "estado": "En progreso",
+        "calificacion": "9/10",
+        "fecha_finalizacion": ""
+    }
+]

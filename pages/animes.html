@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Animes</title>
+    <link rel="stylesheet" href="../styles/animes.css">
+</head>
+<body>
+    <header>
+        <h1>Mis Animes</h1>
+        <input type="text" id="searchInput" placeholder="Buscar anime..." onkeyup="buscarAnime()">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="aboutme.html">Acerca de mí</a></li>
+            <li><a href="libros.html">Libros</a></li>
+        </ul>
+    </nav>
+
+    <section class="repositorio-animes" id="repositorio-animes">
+        <!-- Los animes se cargarán aquí dinámicamente mediante JavaScript -->
+    </section>
+
+    <footer>
+        <p>by. Israel Huacce @2025</p>
+    </footer>
+
+    <script>
+        // Cargar el archivo JSON con los datos de los animes
+        fetch('../animes.json')
+            .then(response => response.json())
+            .then(animes => {
+                const repositorioAnimes = document.getElementById('repositorio-animes');
+                
+                // Ordenar los animes por fecha de finalización (de más reciente a más antiguo)
+                animes.sort((a, b) => new Date(b.fecha_finalizacion) - new Date(a.fecha_finalizacion));
+
+                // Guardar los animes en una variable global
+                window.animesData = animes;
+
+                // Función de búsqueda
+                window.buscarAnime = function () {
+                    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+                    const filteredAnimes = window.animesData.filter(anime => 
+                        anime.nombre.toLowerCase().includes(searchInput)
+                    );
+
+                    mostrarAnimes(filteredAnimes);
+                }
+
+                // Mostrar los animes en la página
+                function mostrarAnimes(animes) {
+                    repositorioAnimes.innerHTML = '';  // Limpiar el repositorio antes de mostrar los resultados
+
+                    animes.forEach(anime => {
+                        const animeDiv = document.createElement('div');
+                        animeDiv.classList.add('anime');
+
+                        const animeHTML = `
+                            <img src="${anime.imagen}" alt="${anime.nombre}">
+                            <div class="anime-info">
+                                <h2>${anime.nombre}</h2>
+                                <div class="estado">Estado: ${anime.estado}</div>
+                                <div class="calificacion">Calificación: ${anime.calificacion}</div>
+                                <div class="fecha_finalizacion">Fecha de finalización: ${anime.fecha_finalizacion}</div>
+                            </div>
+                        `;
+
+                        animeDiv.innerHTML = animeHTML;
+                        repositorioAnimes.appendChild(animeDiv);
+                    });
+                }
+
+                // Mostrar todos los animes inicialmente
+                mostrarAnimes(animes);
+            })
+            .catch(error => {
+                console.error('Error cargando el archivo JSON:', error);
+            });
+    </script>
+</body>
+</html>

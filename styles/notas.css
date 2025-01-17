@@ -1,0 +1,62 @@
+/* Fuente de la página */
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(../fonts/sourcecodepro-extralight.woff) format("woff");
+}
+
+body {
+    margin: 5%;
+    font-family: "Source Code Pro", monospace;
+    background-color: #f6f5f1;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    border-top: 0.5px solid black;
+    padding-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #555;
+    background-color: #f0f0f0;
+}
+
+.apuntes {
+    margin-top: 20px;
+}
+
+.apunte {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.apunte h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}

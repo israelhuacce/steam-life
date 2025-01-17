@@ -1,0 +1,136 @@
+/* Fuente de la página */
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(../fonts/sourcecodepro-extralight.woff) format("woff");
+}
+
+body {
+    margin: 5%;
+    font-family: "Source Code Pro", monospace;
+    background-color: #f6f5f1;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    border-top: 0.5px solid black;
+    padding-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #555;
+    background-color: #f0f0f0;
+}
+
+.repositorio-animes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    grid-auto-rows: minmax(200px, auto); /* Asegura que las filas tengan un tamaño mínimo */
+}
+
+.anime {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    gap: 15px; /* Añade espacio entre la imagen y la información */
+    align-items: center; /* Centra la imagen */
+}
+
+.anime img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.anime-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la información */
+}
+
+.anime-info h2 {
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center; /* Centra el título */
+}
+
+.estado, .calificacion {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+}
+
+.descripcion {
+    font-size: 1em;
+    color: #444;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el repositorio de animes */
+.repositorio-animes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    justify-items: center;
+}
+
+/* Estilo individual para cada anime */
+.anime {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;  /* Tamaño moderado */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Imagen del anime */
+.anime img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Información del anime */
+.anime-info {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
