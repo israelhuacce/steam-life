@@ -88,3 +88,21 @@ footer {
         width: 80%;
     }
 }
+
+/* Ajuste del menú de navegación en pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center; /* Centra los elementos */
+        gap: 10px; /* Espaciado entre los enlaces */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Ajusta el margen para cada elemento */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Ajusta el tamaño del texto para mejorar la legibilidad */
+        padding: 8px 15px; /* Incrementa ligeramente el área de clic */
+    }
+}
