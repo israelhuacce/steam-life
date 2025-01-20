@@ -49,6 +49,9 @@ nav ul li a:hover {
     margin-bottom: 20px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bordes redondeados */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .apunte img {
@@ -71,3 +74,4 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
+

@@ -1,7 +1,7 @@
 [
     {
         "nombre": "Steins;Gate",
-        "imagen": "https://cdn.myanimelist.net/images/anime/1935/127974.jpg",
+        "imagen": "https://cdn.myanimelist.net/images/anime/1167/96846l.jpg",
         "estado": "Finalizado",
         "calificacion": "10/10",
         "fecha_finalizacion": "2021-09-12"
@@ -15,14 +15,14 @@
     },
     {
         "nombre": "Darling in the FranXX",
-        "imagen": "https://cdn.myanimelist.net/images/anime/1614/90408.jpg",
+        "imagen": "https://cdn.myanimelist.net/images/anime/1614/90408l.jpg",
         "estado": "Finalizado",
         "calificacion": "10/10",
         "fecha_finalizacion": "2021-09-12"
     },
     {
         "nombre": "Black Clover",
-        "imagen": "https://cdn.myanimelist.net/images/anime/2/88336.jpg",
+        "imagen": "https://cdn.myanimelist.net/images/anime/1190/105182l.jpg",
         "estado": "Finalizado",
         "calificacion": "9/10",
         "fecha_finalizacion": "2021-09-12"
@@ -33,5 +33,26 @@
         "estado": "En progreso",
         "calificacion": "9/10",
         "fecha_finalizacion": ""
+    },
+    {
+        "nombre": "Bleach",
+        "imagen": "https://cdn.myanimelist.net/images/anime/1489/140535l.jpg",
+        "estado": "Finalizado",
+        "calificacion": "9/10",
+        "fecha_finalizacion": "2021-09-24"
+    },
+    {
+        "nombre": "CyberPunk: Edgerunners",
+        "imagen": "https://cdn.myanimelist.net/images/anime/1818/126435l.jpg",
+        "estado": "Finalizado",
+        "calificacion": "9/10",
+        "fecha_finalizacion": "2023-03-09"
+    },
+    {
+        "nombre": "Monster",
+        "imagen": "https://cdn.myanimelist.net/images/anime/1573/132904l.jpg",
+        "estado": "Finalizado",
+        "calificacion": "10/10",
+        "fecha_finalizacion": "2024-06-13"
     }
 ]
