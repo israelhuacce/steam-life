@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Animes</title>
+    <title>Mis Libros</title>
     <link rel="stylesheet" href="../styles/animes.css">
     <link rel="appel-touch-icon" href="../pictures/logo.png">
     <link rel="icon" href="../pictures/logo.png">
 </head>
 <body>
     <header>
-        <h1>Mis Animes</h1>
+        <h1>Mis Libros</h1>
         <input type="text" id="searchInput" placeholder="Buscar anime..." onkeyup="buscarAnime()">
     </header>
     <nav>
         <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="aboutme.html">Acerca de mí</a></li>
-            <li><a href="libros.html">Libros</a></li>
+            <li><a href="animes.html">Animes</a></li>
         </ul>
     </nav>
 
@@ -31,7 +31,7 @@
 
     <script>
         // Cargar el archivo JSON con los datos de los animes
-        fetch('../animes.json')
+        fetch('../libros.json')
             .then(response => response.json())
             .then(animes => {
                 const repositorioAnimes = document.getElementById('repositorio-animes');

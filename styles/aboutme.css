@@ -11,6 +11,10 @@ body {
     color: #333;
 }
 
+p {
+    font-size: large;
+    font-style: italic;
+}
 header {
     text-align: center;
     border-top: 0.5px solid black;

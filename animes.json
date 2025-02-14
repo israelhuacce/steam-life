@@ -7,13 +7,6 @@
         "fecha_finalizacion": "2021-09-12"
     },
     {
-        "nombre": "Dandandan",
-        "imagen": "https://cdn.myanimelist.net/images/anime/1990/139975l.jpg",
-        "estado": "Finalizado",
-        "calificacion": "9/10",
-        "fecha_finalizacion": "2025-01-16"
-    },
-    {
         "nombre": "Darling in the FranXX",
         "imagen": "https://cdn.myanimelist.net/images/anime/1614/90408l.jpg",
         "estado": "Finalizado",
@@ -54,5 +47,54 @@
         "estado": "Finalizado",
         "calificacion": "10/10",
         "fecha_finalizacion": "2024-06-13"
+    },
+    {
+        "nombre": "Shingeky No Kyojin",
+        "imagen": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-73IhOXpJZiMF.jpg",
+        "estado": "Finalizado",
+        "calificacion": "10/10",
+        "fecha_finalizacion": "2016-02-10"
+    },
+    {
+        "nombre": "Hai to Gensou no Grimgar",
+        "imagen": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21428-dFVIHeZ8McBe.jpg",
+        "estado": "Finalizado",
+        "calificacion": "10/10",
+        "fecha_finalizacion": "2018-06-05"
+    },
+    {
+        "nombre": "Dororo",
+        "imagen": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx101347-2J2p8qJpxpfZ.jpg",
+        "estado": "Finalizado",
+        "calificacion": "10/10",
+        "fecha_finalizacion": "2019-03-20"
+    },
+    {
+        "nombre": "Fumetsu no Anata e",
+        "imagen": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114535-y3NnjexcqKG1.jpg",
+        "estado": "Finalizado",
+        "calificacion": "10/10",
+        "fecha_finalizacion": "2022-08-06"
+    },
+    {
+        "nombre": "Howl no Ugoku Shiro",
+        "imagen": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx431-dDgk19xDZjVX.jpg",
+        "estado": "Finalizado",
+        "calificacion": "10/10",
+        "fecha_finalizacion": "2016-11-15"
+    },
+    {
+        "nombre": "Hotaru no Haka",
+        "imagen": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx578-vU6XcOlb1XFU.jpg",
+        "estado": "Finalizado",
+        "calificacion": "10/10",
+        "fecha_finalizacion": "2016-11-30"
+    },
+    {
+        "nombre": "Sword art Online",
+        "imagen": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx11757-Q9P2zjCPICq5.jpg",
+        "estado": "Finalizado",
+        "calificacion": "10/10",
+        "fecha_finalizacion": "2015-08-17"
     }
 ]

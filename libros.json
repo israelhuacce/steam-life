@@ -1,0 +1,31 @@
+[
+    {
+        "nombre": "Building a Second Brain",
+        "imagen": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1652891488i/59616977.jpg",
+        "estado": "Leído",
+        "calificacion": "⭐⭐⭐⭐⭐",
+        "fecha_finalizacion": "2022-03-22"
+    },
+    {
+        "nombre": "Sapiens, Breve historia de la humanidad",
+        "imagen": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1703329310i/23692271.jpg",
+        "estado": "Leído",
+        "calificacion": "⭐⭐⭐⭐",
+        "fecha_finalizacion": "2022-03-27"
+    },
+    {
+        "nombre": "Crimen y castigo",
+        "imagen": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1381202721i/18634774.jpg",
+        "estado": "Leído",
+        "calificacion": "⭐⭐⭐⭐⭐",
+        "fecha_finalizacion": "2022-02-10"
+    },
+    {
+        "nombre": "El asesinato de Royer Ackroyd",
+        "imagen": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1386103476i/19163301.jpg",
+        "estado": "Leído",
+        "calificacion": "⭐⭐⭐⭐⭐",
+        "fecha_finalizacion": "2023-01-18"
+    }
+
+]
