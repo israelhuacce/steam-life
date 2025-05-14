@@ -26,6 +26,13 @@
         "estado": "Leído",
         "calificacion": "⭐⭐⭐⭐⭐",
         "fecha_finalizacion": "2023-01-18"
+    },
+    {
+        "nombre": "El Código Da Vinci",
+        "imagen": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1372536207i/67556.jpg",
+        "estado": "Leído",
+        "calificacion": "⭐⭐⭐⭐⭐",
+        "fecha_finalizacion": "2020-07-01"
     }
 
 ]

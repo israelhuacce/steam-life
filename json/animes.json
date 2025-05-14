@@ -96,5 +96,12 @@
         "estado": "Finalizado",
         "calificacion": "10/10",
         "fecha_finalizacion": "2015-08-17"
+    },
+    {
+        "nombre": "Saint Seiya: The Lost Canvas",
+        "imagen": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9130-QkSQHOTK1uEH.jpg",
+        "estado": "Finalizado",
+        "calificacion": "10/10",
+        "fecha_finalizacion": "2016-03-20"
     }
 ]

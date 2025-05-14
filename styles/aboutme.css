@@ -6,10 +6,14 @@
 
 body {
     margin: 5%;
-    font-family: "Source Code Pro", monospace;
     background-color: #f6f5f1;
     color: #333;
 }
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
 
 p {
     font-size: large;
@@ -94,3 +98,4 @@ footer {
         height: 180px;
     }
 }
+

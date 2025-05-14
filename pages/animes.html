@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Animes</title>
     <link rel="stylesheet" href="../styles/animes.css">
-    <link rel="appel-touch-icon" href="../pictures/logo.png">
+    <link rel="appel-touch-icon" href="../pictures/logo minimalista.png.png">
     <link rel="icon" href="../pictures/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -31,7 +32,7 @@
 
     <script>
         // Cargar el archivo JSON con los datos de los animes
-        fetch('../animes.json')
+        fetch('../json/animes.json')
             .then(response => response.json())
             .then(animes => {
                 const repositorioAnimes = document.getElementById('repositorio-animes');
