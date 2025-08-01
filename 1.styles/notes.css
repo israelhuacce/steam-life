@@ -1,0 +1,153 @@
+/* ESTILO  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+      font-family: system-ui, sans-serif;
+      background-color: #f9f9f9;
+      color: #111;
+      display: flex;
+      min-height: 100vh;
+}
+
+/* BARRA DE NAVEGACION  */
+.sidebar {
+      width: 220px;
+      background-color: #fff;
+      border-right: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+.sidebar-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+.sidebar h2 {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+
+.nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+.nav-links a {
+      text-decoration: none;
+      color: #111;
+      margin: 0.5rem 0;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+      width: 100%;
+      text-align: center;
+    }
+
+.nav-links a:hover {
+      background-color: #111;
+      color: #fff;
+    }
+
+/* main-content */
+
+.main-content {
+  flex-grow: 1;
+  padding: 4rem 2rem;
+  padding-right: 30rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lista-notas {
+  padding-top: 3rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+/* mejoras  */
+
+.nota-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+.nota-lista li {
+  margin-bottom: 1rem;
+}
+
+.nota-lista a {
+  display: block;
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.nota-lista a:hover {
+  background-color: #f0f0f0;
+  color: #000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+
+/* BOTÓN DE MENÚ PARA MÓVILES */
+.menu-toggle {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #111;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    padding: 2rem 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

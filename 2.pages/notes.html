@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis notas</title>
+  <link rel="stylesheet" href="../1.styles/notes.css">
+  <script src="../4.scripts/notas.js"></script>
+  <link rel="icon" href="../3.resources/icon.png">
+  <link rel="appel-touch-icon" href="../3.resources/icon.png">
+
+</head>
+
+<body>
+  <button class="menu-toggle" onclick="toggleSidebar()">☰ Menú</button>
+  <div class="sidebar">
+        <div class="sidebar-content">
+            <h2>Israel</h2>
+            <nav class="nav-links">
+                <a href="../index.html" ">Inicio</a>
+                <a href="aboutme.html">Sobre mí</a>
+                <a href="notes.html"> Notas</a>
+            </nav>
+        </div>
+  </div>
+
+
+  <div class="main-content"> 
+    <h1>Mis notas</h1>
+    <br>
+    <br>
+  <div class="lista-notas">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+    <input type="text" id="searchInput" placeholder="🔍 Buscar nota..." style="flex: 1; padding: 0.5rem;">
+    <button onclick="sortNotas()" style="margin-left: 0.5rem;">🕒 Ordenar</button>
+  </div>
+
+  <ul id="nota-lista" class="nota-lista">
+    <!-- Las notas se insertan dinámicamente aquí -->
+  </ul>
+  
+  <script>
+    function toggleSidebar() {
+      document.querySelector('.sidebar').classList.toggle('open');
+    }
+  </script>
+
+        
+</body>

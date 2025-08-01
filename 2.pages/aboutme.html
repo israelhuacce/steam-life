@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mí</title>
+  <link rel="stylesheet" href="../1.styles/aboutme.css">
+  <link rel="icon" href="../3.resources/icon.png">
+  <link rel="appel-touch-icon" href="../3.resources/icon.png">
+</head>
+<body>
+  <button class="menu-toggle" onclick="toggleSidebar()">☰ Menú</button>
+
+  <div class="sidebar">
+    <div class="sidebar-content">
+      <h2>Israel</h2>
+      <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <a href="aboutme.html">Sobre mí</a>
+        <a href="notes.html">Notas</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="main-content"> 
+    <div class="profile-container">
+      <div class="profile-image">
+        <img src="../3.resources/foto-perfil.jpg" alt="Foto de perfil de Israel">
+      </div>
+      <div class="profile-text">
+        <p>Soy Israel Huacce, un apasionado de la gestión del conocimiento personal, me gusta aprender algo nuevo cada día, amo la tecnología y la música.</p>
+        <p>Este jardín digital surge como respuesta al ritmo acelerado y superficial de internet, busco cultivar y compartir ideas, reflexiones y aprendizajes a mi propio ritmo</p>
+        <p>Para gestionar y documentar mi flujo de aprendizaje utilizo herramientas como Obsidian, Visual Studio Code, Syncthing y Calibre, asegurando que mi aprendizaje sea estructurado y accesible en cualquier momento.</p>
+        <p>Gracias por visitar mi jardín digital 🐢!</p> 
+        <p>By Israel @2025</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.querySelector('.sidebar').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

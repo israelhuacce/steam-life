@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Israel Huacce</title>
+  <link rel="stylesheet" href="1.styles/style.css">
+  <link rel="icon" href="3.resources/icon.png">
+  <link rel="appel-touch-icon" href="3.resources/icon.png">
+</head>
+<body>
+  <button class="menu-toggle" onclick="toggleSidebar()">☰ Menú</button>
+
+  <div class="sidebar">
+    <div class="sidebar-content">
+      <h2>Israel</h2>
+      <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="2.pages/aboutme.html">Sobre mí</a>
+        <a href="2.pages/notes.html">Notas</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <h1>Hola, soy Israel</h1>
+    <p>Bachiller en Contabilidad y Auditoría, músico aficionado y desarrollador web en formación. Esta es mi página personal.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/izra.gg/" target="_blank">Instagram</a>
+      <a href="https://github.com/israelhuacce" target="_blank">GitHub</a>
+      <a href="mailto:huaccehuamaniisrael@gmail.com">Correo</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.querySelector('.sidebar').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
