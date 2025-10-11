@@ -1,5 +1,5 @@
 const notas = [
- { texto: "Sycnthing ", 
+ { texto: "Syncgthing ", 
  fecha: new Date("2025-08-06"), 
  url: "../2.pages/syncthing.html"},
 ];
