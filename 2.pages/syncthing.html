@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sycnthing</title>
+  <link rel="stylesheet" href="../1.styles/style-notas.css">
+  <script src="../4.scripts/notas.js"></script>
+  <link rel="icon" href="../3.resources/icon.png">
+  <link rel="appel-touch-icon" href="../3.resources/icon.png">
+
+</head>
+
+<body>
+  <button class="menu-toggle" onclick="toggleSidebar()">☰ Menú</button>
+  <div class="sidebar">
+        <div class="sidebar-content">
+            <h2>Israel</h2>
+            <nav class="nav-links">
+                <a href="../index.html" ">Inicio</a>
+                <a href="aboutme.html">Sobre mí</a>
+                <a href="notes.html"> Notas</a>
+            </nav>
+        </div>
+  </div>
+
+
+
+<div class="main-content"> 
+  <h1>Syncthing</h1>
+  <br>
+  <p> <strong>release :</strong> 11-10-2025</p>
+  <p> <strong>tema : </strong> tecnología</p>
+
+  <br>
+  <p>Syncthing es una aplicación que ha sido fundamental tanto durante mi etapa universitaria como ahora en el trabajo. Me ha salvado en innumerables ocasiones al mantener mis archivos sincronizados de forma automática entre mis dispositivos.</p>
+  <br>
+  <h2>Instalación</h2>
+  <br>
+  <h3>Dispositivos con Android</h3>
+  <br>
+  <p>La aplicación la puedes encontrar en la Play Store con el nombre <strong>"Syncthing-Fork"</strong>. Esta es una versión mejorada de la app oficial de Syncthing, la cual dejó de actualizarse con frecuencia.</p>
+
+  <img class="capture-android" src="../3.resources/captura-syncthing-android.jpg" alt="Captura Syncthing Android">
+  <h3>Dispositivos con Windows y Macos</h3>
+  <br>
+  <p>Link de descarga: <a target="_blank" href="https://syncthing.net/downloads/">Syncthing Oficial</a>  </p>
+  <p>Para la Instalación en windows, se tiene 2 opciones:</p>
+  <ul> 
+    <li>
+      Syncthing Windows Setup : Programa oficial de Syncthing y se ejecuta en el navegador, tú decides cuando tenerlo activo.
+    </li> 
+    <li>
+      SyncTrayzor v2 : Desarrollado por terceros, presenta una interfaz gráfica, el inicio es automático. 
+    </li>
+  </ul>
+  <p>Personalmente recomiendo <strong>Syncthing Windows Setup</strong>.</p>
+  <p>Una vez instalado se ejecuta en el navegador en el siguiente enlace : <a target="_blank" href="http://127.0.0.1:8384/# ">http://127.0.0.1:8384/#> </a>
+  </p>
+  <img class="capture-pc" src="../3.resources/syncthing - instalación.png" alt="">
+
+  <h2>Procedimiento de instalación</h2>
+  <ol>
+    <li>En la aplicación móvil, dirigirse a la opción "Mostrar ID del dispositivo"</li>
+    <li>Copiar <strong>ID del dispositivo</strong>  </li>
+    <li>En windows, aperturar el siguiente enlace <a target="_blank" href="http://127.0.0.1:8384/# "> http://127.0.0.1:8384/#> </a> </li>
+    <li> Opción : "+Añadir un dispositivo remoto" </li>
+    <img class="capture-pc" src="../3.resources/syncthing - agregar dispositivo.png" alt="">
+    <li>Pegar el ID del dispositivo</li>
+    <li>Automáticamente llegará una notificación, clic en aceptar.</li>
+    <li>Para sincronizar una carpeta, clic  en "+agregar carpeta", configurar la ruta de la carpeta. </li>
+    <img class="capture-pc" src="../3.resources/syncthing - agregar carpeta.png" alt="">
+    <li>En la opción compartiendo, agregar el dispositivo vinculado previamente.</li>
+    <li>Automáticamente al dispositivo android, llegará la siguiente notificación. </li>
+    <img class="capture-pc" src="../3.resources/syncthing - compartir.jpg" alt="">
+    <li>Al abrir, debemos seleccionar una carpeta compartiremos al igual que en windows; esta será la que se sincronizará automáticamente en ambos dispositivos. </li>
+    <img class="capture-android" src="../3.resources/syncthing - directorio.jpg" alt="">
+    <li>Una vez configurado todo, podemos comprobar la sincronización creando un archivo en una de las carpetas; este debería aparecer automáticamente en la carpeta correspondiente del otro dispositivo.</li>
+  </ol>
+  <br>
+  <br>
+  Cualquier duda o consulta huaccehuamaniisrael@gmail.com
+
+
+
+</div>
+
+
+
+
+  
+  <script>
+    function toggleSidebar() {
+      document.querySelector('.sidebar').classList.toggle('open');
+    }
+  </script>
+
+        
+</body>

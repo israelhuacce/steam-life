@@ -124,16 +124,19 @@ body {
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   body {
-    flex-direction: column;
+    display: block; /* antes era flex-direction: column */
   }
 
   .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
+    width: 220px;
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     z-index: 999;
@@ -144,7 +147,13 @@ body {
   }
 
   .main-content {
-    padding: 2rem 1rem;
+    padding: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lista-notas {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .menu-toggle {
