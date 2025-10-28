@@ -143,6 +143,11 @@ a:hover {
   text-decoration: underline;
 }
 
+/* CELDAS */
+.celda {
+  
+}
+
 
 
 /* RESPONSIVE DESIGN */
@@ -182,4 +187,83 @@ a:hover {
   display: block;
 
   }
+}
+
+/* ESTILOS PARA TABLA AMAZONÍA */
+.tabla-amazonia {
+    width: 100%; 
+    border-collapse: collapse; 
+    font-family: Arial, sans-serif; 
+    font-size: 14px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabla-amazonia thead tr {
+    background-color: #2c3e50;
+}
+
+.tabla-amazonia th {
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.celda {
+    border: 1px solid #e0e0e0;
+    padding: 8px 6px;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color 0.2s ease;
+}
+
+/* Estilos específicos para diferentes tipos de celdas */
+.celda-departamento {
+    background-color: #e8f4f8;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.celda-provincia {
+    background-color: #f0f8f0;
+    color: #34495e;
+}
+
+.celda-distrito {
+    background-color: #fffaf0;
+    color: #2c3e50;
+}
+
+.celda-todo-territorio {
+    font-style: italic;
+    color: #7f8c8d;
+    background-color: #f8f9fa;
+}
+
+/* Estilos para rowspan y colspan */
+.celda-rowspan {
+    vertical-align: middle;
+}
+
+.celda-colspan {
+    text-align: center;
+}
+
+/* Efectos hover para mejor interactividad */
+.tabla-amazonia tr:hover .celda {
+    background-color: #e8f4fc;
+}
+
+/* Responsive para la tabla */
+@media (max-width: 768px) {
+    .tabla-amazonia {
+        font-size: 12px;
+    }
+    
+    .celda {
+        padding: 6px 4px;
+    }
 }

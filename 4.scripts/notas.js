@@ -1,7 +1,11 @@
 const notas = [
- { texto: "Syncthing ", 
+   { texto: "Régimen de la Amazonía ", 
+ fecha: new Date("2025-10-27"), 
+ url: "../2.pages/amazonia.html"},
+  { texto: "Syncthing ", 
  fecha: new Date("2025-10-11"), 
  url: "../2.pages/syncthing.html"},
+
 ];
 
 function renderNotas(filtro = "") {
