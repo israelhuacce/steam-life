@@ -1,0 +1,408 @@
+.about-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 24px 100px;
+}
+
+
+/* ================================
+   ENCABEZADO
+================================ */
+
+.about-header {
+    max-width: 760px;
+    margin-bottom: 80px;
+}
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 40px;
+
+    color: var(--color-text-muted);
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--color-text);
+}
+
+.about-label {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: var(--color-primary);
+
+    font-size: 0.8rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+}
+
+.about-header h1 {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: clamp(2.7rem, 6vw, 4.5rem);
+
+    line-height: 1.05;
+}
+
+.about-intro {
+    max-width: 700px;
+
+    margin-top: 24px;
+
+    color: var(--color-text-muted);
+
+    font-size: 1.15rem;
+
+    line-height: 1.8;
+}
+
+
+/* ================================
+   SECCIONES
+================================ */
+
+.about-section {
+    margin-bottom: 90px;
+}
+
+.section-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 36px;
+}
+
+.section-number {
+    color: var(--color-primary);
+
+    font-family:
+        "Source Code Pro",
+        monospace;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: 1.6rem;
+}
+
+
+/* ================================
+   TEXTO
+================================ */
+
+.about-content {
+    max-width: 760px;
+
+    padding-left: 42px;
+}
+
+.about-content p {
+    margin-bottom: 22px;
+
+    color: var(--color-text-muted);
+
+    font-size: 1rem;
+
+    line-height: 1.9;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ================================
+   TIMELINE
+================================ */
+
+.timeline {
+    position: relative;
+
+    margin-left: 42px;
+
+    padding-left: 30px;
+
+    border-left: 1px solid var(--color-border);
+}
+
+.timeline-item {
+    position: relative;
+
+    display: flex;
+
+    margin-bottom: 48px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+
+    left: -35px;
+
+    top: 5px;
+
+    width: 9px;
+
+    height: 9px;
+
+    background: var(--color-primary);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 4px var(--color-background);
+}
+
+.timeline-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--color-primary);
+
+    font-family:
+        "Source Code Pro",
+        monospace;
+
+    font-size: 0.7rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+}
+
+.timeline-item h3 {
+    margin: 0 0 8px;
+
+    color: var(--color-text);
+
+    font-size: 1.15rem;
+}
+
+.timeline-item p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: var(--color-text-muted);
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+}
+
+
+/* ================================
+   INTERESES
+================================ */
+
+.interests-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.interest-card {
+    padding: 24px;
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-md);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-3px);
+
+    background: var(--color-surface-hover);
+
+    border-color: var(--color-primary);
+}
+
+.interest-icon {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 1.8rem;
+}
+
+.interest-card h3 {
+    margin: 0 0 8px;
+
+    color: var(--color-text);
+
+    font-size: 1.1rem;
+}
+
+.interest-card p {
+    margin: 0;
+
+    color: var(--color-text-muted);
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+}
+
+
+/* ================================
+   CIERRE
+================================ */
+
+.about-closing {
+    max-width: 700px;
+
+    margin: 20px auto 0;
+
+    padding: 48px 32px;
+
+    text-align: center;
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-lg);
+}
+
+.closing-icon {
+    margin-bottom: 16px;
+
+    font-size: 2rem;
+}
+
+.about-closing h2 {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: 1.5rem;
+}
+
+.about-closing p {
+    max-width: 520px;
+
+    margin: 14px auto 0;
+
+    color: var(--color-text-muted);
+
+    font-size: 0.95rem;
+
+    line-height: 1.8;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+
+    .about-page {
+        padding: 60px 20px 80px;
+    }
+
+    .about-header {
+        margin-bottom: 65px;
+    }
+
+    .about-section {
+        margin-bottom: 70px;
+    }
+
+    .about-content {
+        padding-left: 0;
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+    .about-page {
+        padding: 45px 16px 60px;
+    }
+
+    .back-link {
+        margin-bottom: 32px;
+    }
+
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-intro {
+        font-size: 1rem;
+    }
+
+    .section-heading {
+        gap: 12px;
+
+        margin-bottom: 28px;
+    }
+
+    .section-heading h2 {
+        font-size: 1.35rem;
+    }
+
+    .about-content p {
+        font-size: 0.95rem;
+    }
+
+    .timeline {
+        margin-left: 10px;
+
+        padding-left: 25px;
+    }
+
+    .timeline-dot {
+        left: -30px;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-closing {
+        padding: 36px 22px;
+    }
+
+}

@@ -1,0 +1,145 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/notes-page.css";
+import { getCollection } from "astro:content";
+
+const notes = await getCollection("notes");
+
+const sortedNotes = notes.sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+---
+
+<BaseLayout title="Notas">
+
+  <main class="notes-page">
+
+    <!-- CABECERA -->
+
+    <header class="notes-page-header">
+
+      <div class="notes-page-title">
+
+        <a href="/" class="notes-back-link">
+          ← Inicio
+        </a>
+
+        <span class="notes-page-label">
+          DIGITAL GARDEN
+        </span>
+
+        <h1>Notas</h1>
+
+        <p>
+          Ideas, aprendizajes, apuntes y cosas que voy descubriendo
+          mientras estudio, trabajo y construyo proyectos.
+        </p>
+
+      </div>
+
+    </header>
+
+
+    <!-- NAVEGACIÓN -->
+
+    <nav class="notes-tabs">
+
+      <a href="/notas" class="active">
+        📝 Notas
+      </a>
+
+      <a href="/proyectos">
+        💻 Proyectos
+      </a>
+
+    </nav>
+
+
+    <!-- LISTA -->
+
+    <section class="notes-repository">
+
+      <div class="notes-repository-header">
+
+        <div>
+          <h2>Todas las notas</h2>
+          <span>{sortedNotes.length} notas</span>
+        </div>
+
+      </div>
+
+
+      <div class="notes-repository-list">
+
+        {sortedNotes.map((note) => (
+          <article class="notes-repository-item">
+
+            <div class="notes-repository-main">
+
+              <div class="notes-repository-title">
+
+                <span class="notes-repository-icon">
+                  📝
+                </span>
+
+                <a href={`/notas/${note.id}`}>
+                  {note.data.title}
+                </a>
+
+              </div>
+
+              <p class="notes-repository-description">
+                {note.data.description}
+              </p>
+
+              <div class="notes-repository-meta">
+
+                {note.data.tags.map((tag) => (
+                  <span class="notes-repository-tag">
+                    {tag}
+                  </span>
+                ))}
+
+                <span class="notes-repository-date">
+                  {note.data.date.toLocaleDateString("es-PE", {
+                    day: "numeric",
+                    month: "short",
+                    year: "numeric",
+                  })}
+                </span>
+
+              </div>
+
+            </div>
+
+            <a
+              href={`/notas/${note.id}`}
+              class="notes-repository-arrow"
+              aria-label={`Leer ${note.data.title}`}
+            >
+              →
+            </a>
+
+          </article>
+        ))}
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <footer class="notes-page-footer">
+
+      <span>🌱</span>
+
+      <p>
+        Este jardín seguirá creciendo poco a poco.
+      </p>
+
+    </footer>
+
+  </main>
+
+</BaseLayout>

@@ -1,0 +1,70 @@
+---
+import "../styles/notecard.css";
+
+interface Props {
+  title: string;
+  description: string;
+  date: Date | string;
+  category?: string;
+  href?: string;
+}
+
+const {
+  title,
+  description,
+  date,
+  category,
+  href = "#",
+} = Astro.props;
+
+const formattedDate =
+  date instanceof Date
+    ? date.toLocaleDateString("es-PE", {
+        day: "numeric",
+        month: "short",
+        year: "numeric",
+      })
+    : date;
+---
+
+<article class="note-card">
+
+  <div class="note-icon" aria-hidden="true">
+    📝
+  </div>
+
+  <div class="note-card-main">
+
+    <a href={href} class="note-title">
+      {title}
+    </a>
+
+    <p class="note-description">
+      {description}
+    </p>
+
+    <div class="note-meta">
+
+      {category && (
+        <span class="note-category">
+          {category}
+        </span>
+      )}
+
+      <span class="note-date">
+        {formattedDate}
+      </span>
+
+    </div>
+
+  </div>
+
+  <a
+    href={href}
+    class="note-arrow"
+    aria-label={`Leer ${title}`}
+  >
+    →
+  </a>
+
+</article>

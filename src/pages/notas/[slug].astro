@@ -1,0 +1,81 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import "../../styles/note-detail.css";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const notes = await getCollection("notes");
+
+  return notes.map((note) => ({
+    params: {
+      slug: note.id,
+    },
+    props: {
+      note,
+    },
+  }));
+}
+
+const { note } = Astro.props;
+const { Content } = await render(note);
+---
+
+<BaseLayout title={note.data.title}>
+
+  <main class="note-detail-page">
+
+    <!-- CABECERA -->
+
+    <header class="note-detail-header">
+
+      <a href="/notas" class="note-detail-back">
+        ← Volver a las notas
+      </a>
+
+      <div class="note-detail-meta">
+
+        <span class="note-detail-tag">
+          {note.data.tags[0]}
+        </span>
+
+        <span class="note-detail-date">
+          {note.data.date.toLocaleDateString("es-PE", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </span>
+
+      </div>
+
+      <h1>{note.data.title}</h1>
+
+      <p class="note-detail-description">
+        {note.data.description}
+      </p>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+
+    <article class="note-detail-content">
+
+      <Content />
+
+    </article>
+
+
+    <!-- FINAL -->
+
+    <footer class="note-detail-footer">
+
+      <a href="/notas">
+        ← Volver a todas las notas
+      </a>
+
+    </footer>
+
+  </main>
+
+</BaseLayout>

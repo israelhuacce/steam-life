@@ -1,0 +1,82 @@
+---
+import "../styles/navbar.css";
+---
+
+<nav class="navbar">
+
+    <a class="logo" href="/">
+        🌱 Israel
+    </a>
+
+    <div class="nav-right">
+
+        <div class="nav-links">
+
+            <a href="/">Inicio</a>
+            <a href="/sobre-mi">Sobre mí</a>
+            <a href="/notas">Notas</a>
+            <a href="/proyectos">Proyectos</a>
+
+        </div>
+
+        <button
+            class="theme-toggle"
+            id="theme-toggle"
+            type="button"
+            aria-label="Cambiar tema"
+            title="Cambiar tema"
+        >
+            <span id="theme-icon" aria-hidden="true">☀️</span>
+        </button>
+
+    </div>
+
+</nav>
+
+<script is:inline>
+  const themeToggle = document.getElementById("theme-toggle");
+  const themeIcon = document.getElementById("theme-icon");
+
+  const syncThemeIcon = () => {
+    const isLight =
+      document.documentElement.getAttribute("data-theme") === "light";
+
+    if (themeIcon) {
+      themeIcon.textContent = isLight ? "🌙" : "☀️";
+    }
+
+    if (themeToggle) {
+      themeToggle.setAttribute(
+        "aria-label",
+        isLight ? "Cambiar a modo oscuro" : "Cambiar a modo claro"
+      );
+      themeToggle.setAttribute(
+        "title",
+        isLight ? "Cambiar a modo oscuro" : "Cambiar a modo claro"
+      );
+    }
+  };
+
+  syncThemeIcon();
+
+  themeToggle?.addEventListener("click", () => {
+    const isLight =
+      document.documentElement.getAttribute("data-theme") === "light";
+
+    const nextTheme = isLight ? "dark" : "light";
+
+    document.documentElement.setAttribute("data-theme", nextTheme);
+    localStorage.setItem("theme", nextTheme);
+
+    syncThemeIcon();
+
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+
+    if (themeColor) {
+      themeColor.setAttribute(
+        "content",
+        nextTheme === "light" ? "#f6f6f3" : "#0d1117"
+      );
+    }
+  });
+</script>

@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import NotesSection from "../components/NotesSection.astro";
+import "../styles/home.css";
+---
+
+<BaseLayout title="Inicio">
+
+  <main class="home-layout">
+
+    <!-- PERFIL -->
+    <section class="home-profile">
+      <Hero />
+    </section>
+
+    <!-- NOTAS -->
+    <aside class="home-notes">
+      <NotesSection />
+    </aside>
+
+  </main>
+
+</BaseLayout>

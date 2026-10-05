@@ -1,0 +1,186 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/projects.css";
+---
+
+<BaseLayout title="Proyectos">
+
+  <main class="projects-page">
+
+    <!-- CABECERA -->
+
+    <header class="projects-header">
+
+      <a href="/" class="projects-back-link">
+        ← Inicio
+      </a>
+
+      <span class="projects-label">
+        PORTAFOLIO
+      </span>
+
+      <h1>Proyectos</h1>
+
+      <p>
+        Un espacio donde reúno aprendizajes, ideas y cosas que voy descubriendo en el camino.
+      </p>
+
+    </header>
+
+
+    <!-- TABS -->
+
+    <nav class="projects-tabs">
+
+      <a href="/notas">
+        📝 Notas
+      </a>
+
+      <a href="/proyectos" class="active">
+        💻 Proyectos
+      </a>
+
+    </nav>
+
+
+    <!-- LISTA DE PROYECTOS -->
+
+    <section class="projects-repository">
+
+      <div class="projects-repository-header">
+
+        <div>
+          <h2>Mis proyectos</h2>
+          <span>2 proyectos</span>
+        </div>
+
+      </div>
+
+
+      <div class="projects-list">
+
+
+        <!-- SISTEMA CONTABLE -->
+
+        <article class="project-item">
+
+          <div class="project-main">
+
+            <div class="project-title-row">
+
+              <span class="project-icon">
+                📊
+              </span>
+
+              <span class="project-title">
+                Sistema Contable
+              </span>
+
+              <span class="project-visibility private">
+                Privado
+              </span>
+
+            </div>
+
+            <p class="project-description">
+              Proyecto orientado a la gestión y organización de
+              información contable, buscando simplificar procesos
+              y facilitar el trabajo diario.
+            </p>
+
+            <div class="project-meta">
+
+              <span class="project-tag">
+                JavaScript
+              </span>
+
+              <span class="project-tag">
+                Web
+              </span>
+
+              <span class="project-tag">
+                Contabilidad
+              </span>
+
+              <span class="project-status">
+                En desarrollo
+              </span>
+
+            </div>
+
+          </div>
+
+          <span class="project-lock">
+            🔒
+          </span>
+
+        </article>
+
+
+        <!-- CORELCO -->
+
+        <article class="project-item">
+
+          <div class="project-main">
+
+            <div class="project-title-row">
+
+              <span class="project-icon">
+                💼
+              </span>
+
+              <span class="project-title">
+                CORELCO-ID
+              </span>
+
+              <span class="project-visibility private">
+                Público
+              </span>
+
+            </div>
+
+            <p class="project-description">
+              Sitio web creado para presentar servicios contables, información institucional y fortalecer la presencia profesional en internet. 
+            </p>
+
+            <div class="project-meta">
+
+              <span class="project-tag">
+                Web
+              </span>
+
+              <span class="project-tag">
+                Contabilidad
+              </span>
+
+            </div>
+
+          </div>
+
+          <span class="project-lock">
+            🔨
+          </span>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="projects-footer">
+
+      <span>🌱</span>
+
+      <p>
+        Más proyectos irán apareciendo por aquí.
+      </p>
+
+    </footer>
+
+  </main>
+
+</BaseLayout>

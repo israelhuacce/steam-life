@@ -1,0 +1,11 @@
+/* The page-specific styles control their own max-width and spacing. */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-width: 0;
+}
