@@ -1,3 +1,4 @@
+
 /* ========================================
    HOME
    ======================================== */
@@ -5,17 +6,12 @@
 .home-layout {
     width: 100%;
     max-width: 1180px;
-
     margin: 0 auto;
-
     padding: 48px 24px 96px;
 
     display: grid;
-
     grid-template-columns: minmax(0, 1fr) 360px;
-
     gap: 56px;
-
     align-items: start;
 }
 
@@ -25,19 +21,21 @@
 
 .home-notes {
     min-width: 0;
-
     position: sticky;
-
     top: 88px;
 }
 
 .home-notes .notes {
     width: 100%;
     max-width: none;
-
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* ========================================
+   TABLET
+   ======================================== */
 
 @media (max-width: 1000px) {
     .home-layout {
@@ -51,9 +49,14 @@
     }
 
     .home-notes .notes {
-        margin-top: 12px;
+        width: calc(100% - 32px);
+        margin: 12px auto 0;
     }
 }
+
+/* ========================================
+   MÓVIL
+   ======================================== */
 
 @media (max-width: 600px) {
     .home-layout {
@@ -62,6 +65,7 @@
     }
 
     .home-notes .notes {
-        margin-top: 12px;
+        width: calc(100% - 32px);
+        margin: 12px auto 0;
     }
 }

@@ -1,3 +1,4 @@
+
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
@@ -10,6 +11,7 @@ const notes = defineCollection({
     title: z.string(),
     description: z.string(),
     date: z.coerce.date(),
+    lastModified: z.coerce.date().optional(),
     tags: z.array(z.string()),
   }),
 });

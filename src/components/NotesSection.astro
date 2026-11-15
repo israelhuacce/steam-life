@@ -1,3 +1,4 @@
+
 ---
 import "../styles/notes.css";
 import NoteCard from "./NoteCard.astro";
@@ -35,6 +36,7 @@ const latestNotes = notes
         title={note.data.title}
         description={note.data.description}
         date={note.data.date}
+        lastModified={note.data.lastModified}
         category={note.data.tags[0]}
         href={`/notas/${note.id}`}
       />

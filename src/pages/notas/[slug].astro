@@ -1,3 +1,4 @@
+
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import "../../styles/note-detail.css";
@@ -18,13 +19,19 @@ export async function getStaticPaths() {
 
 const { note } = Astro.props;
 const { Content } = await render(note);
+
+const formatDate = (date: Date) =>
+  date.toLocaleDateString("es-PE", {
+    timeZone: "UTC",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 ---
 
 <BaseLayout title={note.data.title}>
 
   <main class="note-detail-page">
-
-    <!-- CABECERA -->
 
     <header class="note-detail-header">
 
@@ -39,14 +46,16 @@ const { Content } = await render(note);
         </span>
 
         <span class="note-detail-date">
-          {note.data.date.toLocaleDateString("es-PE", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}
+          {formatDate(note.data.date)}
         </span>
 
       </div>
+
+      {note.data.lastModified && (
+        <p class="note-detail-updated">
+          ↻ Actualizado el {formatDate(note.data.lastModified)}
+        </p>
+      )}
 
       <h1>{note.data.title}</h1>
 
@@ -56,24 +65,14 @@ const { Content } = await render(note);
 
     </header>
 
-
-    <!-- CONTENIDO -->
-
     <article class="note-detail-content">
-
       <Content />
-
     </article>
 
-
-    <!-- FINAL -->
-
     <footer class="note-detail-footer">
-
       <a href="/notas">
         ← Volver a todas las notas
       </a>
-
     </footer>
 
   </main>

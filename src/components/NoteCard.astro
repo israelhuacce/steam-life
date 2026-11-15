@@ -1,3 +1,4 @@
+
 ---
 import "../styles/notecard.css";
 
@@ -5,6 +6,7 @@ interface Props {
   title: string;
   description: string;
   date: Date | string;
+  lastModified?: Date | string;
   category?: string;
   href?: string;
 }
@@ -13,18 +15,28 @@ const {
   title,
   description,
   date,
+  lastModified,
   category,
   href = "#",
 } = Astro.props;
 
-const formattedDate =
-  date instanceof Date
-    ? date.toLocaleDateString("es-PE", {
-        day: "numeric",
-        month: "short",
-        year: "numeric",
-      })
-    : date;
+const formatDate = (value: Date | string) => {
+  const parsedDate = value instanceof Date
+    ? value
+    : new Date(value);
+
+  return parsedDate.toLocaleDateString("es-PE", {
+    timeZone: "UTC",
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+};
+
+const formattedDate = formatDate(date);
+const formattedLastModified = lastModified
+  ? formatDate(lastModified)
+  : null;
 ---
 
 <article class="note-card">
@@ -57,6 +69,12 @@ const formattedDate =
 
     </div>
 
+    {formattedLastModified && (
+      <span class="note-updated">
+        ↻ Actualizado: {formattedLastModified}
+      </span>
+    )}
+
   </div>
 
   <a
@@ -68,3 +86,12 @@ const formattedDate =
   </a>
 
 </article>
+
+<style>
+  .note-updated {
+    display: block;
+    margin-top: 5px;
+    color: var(--color-success);
+    font-size: 0.78rem;
+  }
+</style>

@@ -1,3 +1,4 @@
+
 /* ========================================
    VARIABLES
    ======================================== */
@@ -6,29 +7,26 @@
     /* DARK */
 
     --color-background: #0d1117;
-
     --color-surface: #161b22;
-
     --color-surface-hover: #1c2128;
-
     --color-text: #f0f6fc;
-
     --color-text-muted: #8b949e;
-
     --color-border: #30363d;
 
     --color-primary: #8b5cf6;
-
     --color-primary-hover: #a78bfa;
 
     --color-link: #58a6ff;
-
     --color-link-hover: #79c0ff;
 
     --color-success: #238636;
     --color-success-hover: #2ea043;
     --color-on-accent: #ffffff;
     --color-code: #d2a8ff;
+
+    /* PROFILE */
+
+    --color-profile-outline: #238636;
 
     /* TYPOGRAPHY */
 
@@ -82,29 +80,26 @@
 [data-theme="light"] {
 
     --color-background: #f6f6f3;
-
     --color-surface: #ffffff;
-
     --color-surface-hover: #f0f0ed;
-
     --color-text: #24292f;
-
     --color-text-muted: #656d76;
-
     --color-border: #d0d7de;
 
     --color-primary: #6d28d9;
-
     --color-primary-hover: #5b21b6;
 
     --color-link: #0969da;
-
     --color-link-hover: #0550ae;
 
     --color-success: #1f883d;
     --color-success-hover: #1a7f37;
     --color-on-accent: #ffffff;
     --color-code: #6d28d9;
+
+    /* PROFILE */
+
+    --color-profile-outline: #238636;
 
     --shadow-sm:
         0 2px 8px rgba(27, 31, 36, 0.08);
@@ -120,9 +115,7 @@
 
 * {
     margin: 0;
-
     padding: 0;
-
     box-sizing: border-box;
 }
 
@@ -142,13 +135,9 @@ html {
 
 body {
     background: var(--color-background);
-
     color: var(--color-text);
-
     font-family: var(--font-body);
-
     line-height: 1.6;
-
     min-height: 100vh;
 
     -webkit-font-smoothing: antialiased;
@@ -184,7 +173,6 @@ a {
 
 ::selection {
     background: #8b5cf6;
-
     color: white;
 }
 
