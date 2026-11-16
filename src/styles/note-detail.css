@@ -195,8 +195,6 @@
    ========================= */
 
 .note-detail-content table {
-    display: block;
-    overflow-x: auto;
     width: 100%;
     margin: 28px 0;
     border-collapse: collapse;
@@ -384,7 +382,6 @@
     }
 }
 
-
 /* =========================
    TABLAS RESPONSIVE — MÓVIL
    ========================= */
@@ -392,43 +389,56 @@
 @media (max-width: 600px) {
 
     .note-detail-content table {
-        display: block;
+        display: table;
+        table-layout: fixed;
         width: 100%;
-        max-width: 100%;
         min-width: 0;
-        overflow-x: auto;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
+        max-width: 100%;
+        margin: 24px 0;
         border-collapse: collapse;
-        font-size: 0.82rem;
+        border: 1px solid var(--color-border);
+        font-size: 0.76rem;
+        line-height: 1.45;
+        overflow: visible;
     }
 
-    .note-detail-content table thead,
+    .note-detail-content table thead {
+        display: table-header-group;
+    }
+
     .note-detail-content table tbody {
-        width: max-content;
+        display: table-row-group;
     }
 
     .note-detail-content table tr {
-        width: max-content;
+        display: table-row;
     }
 
     .note-detail-content table th,
     .note-detail-content table td {
-        min-width: 115px;
-        max-width: 190px;
-        padding: 10px;
+        display: table-cell;
+        min-width: 0;
+        max-width: none;
+        padding: 9px 6px;
         white-space: normal;
-        overflow-wrap: anywhere;
-        line-height: 1.5;
+        overflow-wrap: break-word;
+        word-break: normal;
+        vertical-align: middle;
+        box-sizing: border-box;
     }
 
-    .note-detail-content table th:last-child,
-    .note-detail-content table td:last-child {
-        min-width: 190px;
+    .note-detail-content table th:nth-child(1),
+    .note-detail-content table td:nth-child(1) {
+        width: 27%;
     }
 
-    .note-detail-content table {
-        scrollbar-width: thin;
-        scrollbar-color: var(--color-primary) var(--color-surface);
+    .note-detail-content table th:nth-child(2),
+    .note-detail-content table td:nth-child(2) {
+        width: 27%;
+    }
+
+    .note-detail-content table th:nth-child(3),
+    .note-detail-content table td:nth-child(3) {
+        width: 46%;
     }
 }

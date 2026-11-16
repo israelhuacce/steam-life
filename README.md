@@ -1,43 +1,44 @@
-# Astro Starter Kit: Minimal
+# 🌱 Digital Garden — Israel Huacce
 
-```sh
-npm create astro@latest -- --template minimal
-```
+> Un espacio personal para cultivar ideas, documentar aprendizajes y compartir conocimiento.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Mi **Digital Garden** es un espacio en internet donde reúno ideas, notas, proyectos y aprendizajes que voy desarrollando a lo largo del tiempo.
 
-## 🚀 Project Structure
+Aquí convergen mis intereses por la tecnología, la contabilidad, la productividad, el conocimiento y el aprendizaje continuo.
 
-Inside of your Astro project, you'll see the following folders and files:
+No pretende ser un sitio terminado, sino un espacio vivo que evoluciona conmigo.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+🌐 **Visita el sitio:** [israel-huacce.netlify.app](https://israel-huacce.netlify.app)
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## ✨ ¿Qué encontrarás aquí?
 
-Any static assets, like images, can be placed in the `public/` directory.
+- **Notas:** ideas, apuntes, guías y conocimientos que voy documentando.
+- **Proyectos:** iniciativas personales y experimentos tecnológicos.
+- **Sobre mí:** mi trayectoria, intereses y aprendizajes.
+- **Recursos:** herramientas e ideas que forman parte de mi entorno digital.
 
-## 🧞 Commands
+## 🛠️ Tecnologías
 
-All commands are run from the root of the project, from a terminal:
+Este proyecto está construido con tecnologías web modernas:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies     git log --oneline                       |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- [Astro](https://astro.build/) — generación de sitios web rápidos y estáticos.
+- HTML — estructura del contenido.
+- CSS — diseño y experiencia visual.
+- JavaScript — interactividad.
+- Markdown — documentación y publicación de notas.
 
-## 👀 Want to learn more?
+## 🌱 Filosofía
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Creo que el conocimiento crece cuando se documenta, se conecta y se comparte.
+
+Este espacio nace de esa idea: transformar lo que aprendo en conocimiento que pueda consultar, desarrollar y compartir.
+
+No todo tiene que estar terminado para ser compartido. Las ideas también necesitan espacio para crecer.
+
+---
+
+**Cultivado con 🌱 por Israel Huacce**
+
+Ayacucho, Perú.
