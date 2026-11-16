@@ -383,3 +383,52 @@
         margin-top: 44px;
     }
 }
+
+
+/* =========================
+   TABLAS RESPONSIVE — MÓVIL
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .note-detail-content table {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        border-collapse: collapse;
+        font-size: 0.82rem;
+    }
+
+    .note-detail-content table thead,
+    .note-detail-content table tbody {
+        width: max-content;
+    }
+
+    .note-detail-content table tr {
+        width: max-content;
+    }
+
+    .note-detail-content table th,
+    .note-detail-content table td {
+        min-width: 115px;
+        max-width: 190px;
+        padding: 10px;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        line-height: 1.5;
+    }
+
+    .note-detail-content table th:last-child,
+    .note-detail-content table td:last-child {
+        min-width: 190px;
+    }
+
+    .note-detail-content table {
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-primary) var(--color-surface);
+    }
+}
